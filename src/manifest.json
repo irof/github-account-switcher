@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "github-account-switcher",
+  "version": "1.0.0",
+  "description": "switching github account",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "declarativeContent",
+    "tabs",
+    "storage",
+    "cookies",
+    "https://github.com/"
+  ]
+}

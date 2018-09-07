@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.2"
+  },
+  "name": "github-account-switcher",
+  "description": "switch github account",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irof/github-account-switcher.git"
+  },
+  "author": "irof",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/irof/github-account-switcher/issues"
+  },
+  "homepage": "https://github.com/irof/github-account-switcher#readme"
+}
