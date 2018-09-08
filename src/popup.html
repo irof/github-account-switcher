@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body style="width:300px">
+
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    div.controller {
+      white-space: nowrap;
+    }
+
+    .controller button {
+      padding: 5px 8px;
+    }
+
+    #accounts {
+      padding: 5px;
+    }
+
+    #accounts button {
+      background-color: green;
+      border-radius: 5px;
+      color: white;
+      padding: 5px 8px;
+      font-size: 1.5em;
+      margin: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="controller">
     <button id="save">save current account</button>
     <button id="clear">clear</button>
     <button id="loginpage">login page</button>
+  </div>
 
-    <hr/>
-    <div id="accounts"></div>
+  <div id="accounts"></div>
 
-    <script src="popup.js"></script>
-  </body>
+  <script src="popup.js"></script>
+</body>
+
 </html>
