@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "github-account-switcher",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "switching github account",
   "icons": {
     "128": "icon128.png"
