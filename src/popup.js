@@ -6,7 +6,7 @@ document.getElementById("save").onclick = () => {
         "url": "https://github.com",
         "name": "dotcom_user"
     }, username => {
-        chrome.cookies.get({ 
+        chrome.cookies.get({
             "url": "https://github.com",
             "name": "user_session"
         }, sessionValue => {
@@ -28,8 +28,8 @@ document.getElementById("loginpage").onclick = () => {
         "value": "dummy"
     }, () => {
         chrome.tabs.update({
-            "url" : "https://github.com/login"
-        });
+            "url": "https://github.com/login"
+        }, () => window.close());
     });
 };
 
@@ -45,7 +45,7 @@ function loadAccounts() {
                     "name": "user_session",
                     "value": all[username]
                 }, () => {
-                    chrome.tabs.reload();
+                    chrome.tabs.reload(() => window.close());
                 });
             };
             accounts.appendChild(btn);
